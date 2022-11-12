@@ -1,37 +1,5 @@
 <h1><code>Headless Technologies Limited</code></h1>
 
-<!DOCTYPE html>
-<html>
-
-<head>
-	<title>
-		HTML | <font> color Attribute
-	</title>
-</head>
-
-<body>
-	<font size="6"
-		face="verdana"
-		color="green">
-		GeeksforGeeks!
-	</font>
-	<br>
-		
-	<font size="6"
-		face="arial"
-		color="#008000">
-		GeeksforGeeks!
-	</font>
-	<br>
-
-	<font size="6"
-		color="rgb(128, 128, 0)">
-		GeeksforGeeks!
-	</font>
-</body>
-
-</html>
-
 
 <h3><b> Problem Statement Description: </b></h3>
 
