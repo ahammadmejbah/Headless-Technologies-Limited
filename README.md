@@ -20,11 +20,11 @@ There were two different datasets, one for training and another for testing or v
 ``` python
 
 1. Fast Sentence Embeddings --> fse
-2. gensim
+2. Gensim --> gensim
 3. Natural Language Toolkit --> nltk
 4. Scikit-learn --> sklearn
 5. Regular Expressions --> re
-6. unicodedata
+6. Uni Code Data --> unicodedata
 7. Matplotlib 
 8. Seaborn 
 9. Pytroch --> torch
