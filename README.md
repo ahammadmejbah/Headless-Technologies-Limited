@@ -95,7 +95,7 @@ model_bert = BertForQuestionAnswering.from_pretrained('bert-large-uncased-whole-
 
 ``` python
 
-                        Cosine Similarity
+Cosine Similarity
                         
 ```
 
