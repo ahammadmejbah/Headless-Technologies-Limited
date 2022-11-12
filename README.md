@@ -94,6 +94,19 @@ Embedding models are able to extract the meaning of words by making use of the c
 <h3><code><b> Model for answering questions based on Word2Vec data: </b></code></h3>
 
 Word2Vec is an application that learns word associations from a large text corpus by employing a neural network. This model, once trained, is able to recognize similarities within words. It can also be used to predict synonyms and measure the cosine similarity between different words. The machine is able to comprehend the semantics of the language because it is able to measure the degree to which words are similar to one another. Utilizing this in the construction of a FQA system is possible. On our dataset, I was able to modify word2vec embeddings in order to accommodate a question-and-answer format as follows:
+
+``` python 
+
+# predict the most similar document
+X = embedding.transform([question])
+Q_id = retriever.kneighbors(X, return_distance=False)[0][0]
+selected = df.iloc[Q_id]['Question']
+
+# vectorize the document
+transform_text(embedding, selected)
+
+
+```
         
 Using fundamental Python data manipulation techniques, the incoming data are first transformed into a list of lists. The word2vec model is updated with these new pieces of data. After that, the model is trained for a total of fifty epochs. The embedding size is maintained at its default value of 100, and the size of the context window is set to 8. After the model has been properly trained, I will start responding to inquiries. I broke down the question that we were asking into its individual words and input them into the Word2Vec system. After adding all of the created embeddings together, the results are then averaged. The question now has a context thanks to this embedding. After that, I go on to the relevant article content, which is intended to be the source from which the response is formed, and I break it up into individual phrases. After that, I utilize a method that is conceptually similar to locate embeddings for each sentence that is included in our article content. Once I obtain the embeddings for the question as well as for each phrase in the response text, I next use the cosine similarity method to determine the degree of similarity between the embeddings of the question and those of each article sentence. The prediction made by the model for the output of the given question is the phrase that has the greatest degree of similarity with the question.        
         
