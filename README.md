@@ -62,7 +62,7 @@ There are several different embedding approaches that we may employ to successfu
 
 
 
-<code><b>Data Pre-processing:</b></code>
+<h3><code><b>Data Pre-processing:</b></code></h3>
 
 Datapoints that contain NAN values, if present in the question or answer columns, are dropped from the dataframe. I then read the question pattern for each datapoint and extracted the question text from that file in the dataframe. Newlines ("n") in the Queston column are replaced with "." fullstops.      
         
