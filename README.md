@@ -15,8 +15,8 @@ I have a frequently asked questions list available in CSV format in the followin
 
 ``` python
 
-        1. Question
-        2. Answer
+1. Question
+2. Answer
 
 ```
 
@@ -53,8 +53,8 @@ There are several different embedding approaches that we may employ to successfu
 <h4><code>I have taken two parts from transformer:</code></h4>
 
 ``` python
-        1. BertTokenizer
-        2. BertForQuestionAnswering
+1. BertTokenizer
+2. BertForQuestionAnswering
         
 ```
 
