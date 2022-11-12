@@ -1,5 +1,16 @@
 <h1><code>Headless Technologies Limited</code></h1>
 
+<center><h1> Problem Statement Description: </h1></center>
+
+
+In today's environment, the way information is accessible may be greatly influenced by the use of frequently asked questions (FAQ) systems. Within the field of computer science, the field of FQA may be located at the point where information retrieval and natural language processing meet. The creation of intelligent computer systems that are able to react in natural language to questions posed by users is the focus of this area of study. FQA systems that are able to retrieve desired information accurately and quickly without having to skim through the entire corpus can serve as valuable assets in industry, academia, and our own personal lives. This can result in improved search engine results and more personalized conversational chatbots, for example. Law companies and human resources departments are two examples of real-world settings in which FQA systems have the potential to be useful. In the first scenario, specific information may be required (for citation in a current case) from the records of thousands of previous cases; nonetheless, adopting a FQA system may save a significant amount of time and labor when compared to other options. In the latter scenario, an employee may need to look up particular laws, such as those pertaining to vacations; employing a FQA system might assist them in this endeavor by providing the appropriate answers to queries of the type "How many job openings are available each year?"
+        
+
+</br>
+</br>
+</br>
+</br>
+        
 For solving this FAQ problem statement, I have to consider a few preliminary steps before moving forward with the models. First of all, I have to use regular expression techniques for cleaning the datasets. After that, I need to use different approaches so that I can make it acceptable to others.
 
 I have a frequently asked questions list available in CSV format in the following file: It discusses Albert Einstein and includes a lot of questions and answers about him. In the datasets, it has both of the following features:
