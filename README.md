@@ -111,6 +111,11 @@ transform_text(embedding, selected)
 Using fundamental Python data manipulation techniques, the incoming data are first transformed into a list of lists. The word2vec model is updated with these new pieces of data. After that, the model is trained for a total of fifty epochs. The embedding size is maintained at its default value of 100, and the size of the context window is set to 8. After the model has been properly trained, I will start responding to inquiries. I broke down the question that we were asking into its individual words and input them into the Word2Vec system. After adding all of the created embeddings together, the results are then averaged. The question now has a context thanks to this embedding. After that, I go on to the relevant article content, which is intended to be the source from which the response is formed, and I break it up into individual phrases. After that, I utilize a method that is conceptually similar to locate embeddings for each sentence that is included in our article content. Once I obtain the embeddings for the question as well as for each phrase in the response text, I next use the cosine similarity method to determine the degree of similarity between the embeddings of the question and those of each article sentence. The prediction made by the model for the output of the given question is the phrase that has the greatest degree of similarity with the question.        
         
         
+        
+<code> The Word2Vec model works in this manner by selecting a phrase from the article text that has the greatest Word2Vec embedding similarity with the question that is being asked and then outputting that sentence as the response. This extremely basic question-answering system has a good chance of getting the right response right most of the time. </code>        
+        
+        
+        
 
 <h3><code>I have taken two parts from transformer:</code></h3>
 
