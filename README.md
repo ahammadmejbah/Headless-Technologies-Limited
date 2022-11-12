@@ -56,15 +56,15 @@ There are several different embedding approaches that we may employ to successfu
 
 
 
-<h3> <code> Distribution of text word count of 10 Rows </code><h3>
+<h3> <code> Distribution of text word count of 10 Rows </code></h3>
 
 <img width="702" alt="image" src="https://user-images.githubusercontent.com/56669333/201469851-c5d1010b-a1c4-467b-850d-00de3716b5af.png">
 
 
-        
+
 <code><b>Data Pre-processing:</b></code>
+
 Datapoints that contain NAN values, if present in the question or answer columns, are dropped from the dataframe. I then read the question pattern for each datapoint and extracted the question text from that file in the dataframe. Newlines ("n") in the Queston column are replaced with "." fullstops.      
-        
         
 
 <h3><code>I have taken two parts from transformer:</code></h3>
