@@ -211,6 +211,8 @@ ax2.set_title('Answer text ',fontsize=40);
 
 ```
 
+<h2><code>Wordcloud</code></h2>
+A collection or cluster of words that are represented in varying sizes is called a word cloud. When a word is given a larger font size and bolder font style, it indicates that the supplied text emphasizes the significance of that term by referring to it more often than other words.
 
 <img src="https://github.com/ahammadmejbah/Headless-Technologies-Limited/blob/main/Images/word.png" alt="Logo">
 
