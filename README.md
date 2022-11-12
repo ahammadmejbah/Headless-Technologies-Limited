@@ -32,6 +32,14 @@ NLP's Transformer is a novel design that seeks to handle problems sequence-to-se
 I have developed a new model for the representation of querstion and answers called BERT, which stands for Bidirectional Encoder Representations from Transformers. BERT, in contrast to more contemporary models of language representation, is intended to pre-train deep bidirectional representations from unlabeled text. This is accomplished by simultaneously conditioning on both left and right context at all levels of the model. Therefore, the pre-trained BERT model can be fine-tuned with just one more output layer to make state-of-the-art models for a wide range of tasks, such as answering questions and making inferences about language, without having to make significant changes to the architecture for each task. This is possible because the pre-trained BERT model has already been trained.
 
 
+``` python
+                                                 2. BertTokenizer
+```
+
+
+The BertTokenizer was yet another job that was finished for this problem statement. A tool that is referred to as a "word fragment tokenizer" is used by BERT. The process works by disassembling words into either their whole forms (for example, one word becomes one token) or into word parts, with the possibility that a single word may be broken up into several tokens. One scenario in which this may be helpful is one in which a word can be written in more than one way.
+
+
 <h2>I used cosine similarity to compare the vectors here.</h2>
 <h3><code> Cosine Similarity </code></h3>
 
