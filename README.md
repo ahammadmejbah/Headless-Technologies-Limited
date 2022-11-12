@@ -152,3 +152,17 @@ def cosine_similarity(X, Y=None, dense_output=True):
 ```
 <img src="https://github.com/ahammadmejbah/Headless-Technologies-Limited/blob/main/Images/Boxplot.png" alt="Logo">
 
+
+
+
+
+
+
+<img src="https://github.com/ahammadmejbah/Headless-Technologies-Limited/blob/main/Images/word.png" alt="Logo">
+
+
+
+
+
+
+
