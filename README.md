@@ -215,6 +215,32 @@ ax2.set_title('Answer text ',fontsize=40);
 <img src="https://github.com/ahammadmejbah/Headless-Technologies-Limited/blob/main/Images/word.png" alt="Logo">
 
 
+<h2><code>Jaccard index </code></h2>
+
+The Jaccard similarity is a measurement that determines the degree of similarity between two different sets of data to determine which members of the sets are common and which members are unique. The Jaccard similarity is determined by taking the total number of observations from both sets and dividing that number by the total number of observations from either set.
+
+<img width="322" alt="image" src="https://user-images.githubusercontent.com/56669333/201491261-76bad9f8-97c9-4ea0-b01f-28e7f3731207.png">
+
+``` python
+
+def jaccard(str1, str2): 
+    a = set(str1.lower().split()) 
+    b = set(str2.lower().split())
+    c = a.intersection(b)
+    return float(len(c)) / (len(a) + len(b) - len(c))
+
+
+Sentence_1 = df['Question'][0]
+Sentence_2 = df['Answer'][0]
+Sentence_3 = df['Answer'][1]
+
+    
+print(jaccard(Sentence_1,Sentence_2))
+print(jaccard(Sentence_1,Sentence_3))
+
+```
+
+
 The Conversation, as Well as Some Closing Ideas Creating an effective question-and-answer system is a tough undertaking that one must undertake. This problem becomes much more difficult to solve when one considers the several types of results (yes/no, descriptive, spans), which a user may anticipate getting in response to a single question. For example, a user may expect to receive yes/no responses. After beginning with straightforward approaches such as Word2Vec and SIF embeddings, we progressed to attention-based state-of-the-art models such as BERT, which are more difficult to understand. 
 
 
