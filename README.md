@@ -5,7 +5,9 @@
 
 
 
+<code> Cosine Similarity </code>
 
+The degree of resemblance between two vectors in an inner product space may be measured using the cosine similarity. It checks if two vectors are heading nearly in the same direction by measuring the cosine of the angle formed by the two vectors and comparing the results. In text analysis, it is often used as a measurement tool for document similarity.
 
 
 ``` python
