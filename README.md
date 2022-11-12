@@ -40,6 +40,7 @@ tokenizer = BertTokenizer.from_pretrained('bert-large-uncased-whole-word-masking
 
 ```
 </br>
+</br>
 
 ``` python
                                                  2. BertForQuestionAnswering
@@ -51,6 +52,7 @@ I have developed a new model for the representation of querstion and answers cal
 model_bert = BertForQuestionAnswering.from_pretrained('bert-large-uncased-whole-word-masking-finetuned-squad')
 
 ```
+</br>
 </br>
 
 <h2>I used cosine similarity to compare the vectors here.</h2>
