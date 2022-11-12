@@ -50,6 +50,24 @@ import fse
 
 There are several different embedding approaches that we may employ to successfully incorporate the meta data of our query. In my experience, I have made use of "Fast Sentence Embeddings," which is a Python package that may be thought of as an extension of Gensim. The purpose of this library is to make it as simple as possible to locate sentence vectors for big sets of sentences or texts by using vectors.
 
+
+
+
+<h3> <code> Distribution of text word count of 10 Rows </code><h3>
+
+<img width="702" alt="image" src="https://user-images.githubusercontent.com/56669333/201469851-c5d1010b-a1c4-467b-850d-00de3716b5af.png">
+
+
+
+
+
+
+
+
+
+
+
+
 <h3><code>I have taken two parts from transformer:</code></h3>
 
 ``` python
