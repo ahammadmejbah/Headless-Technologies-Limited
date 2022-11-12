@@ -40,7 +40,7 @@ There were two different datasets, one for training and another for testing or v
 
 ```
 
-<h4><code>Fast Sentence Embeddings" (FSE) :</code></h4>
+<h3><code>Fast Sentence Embeddings" (FSE) :</code></h3>
 
 ``` python
 
@@ -50,7 +50,7 @@ import fse
 
 There are several different embedding approaches that we may employ to successfully incorporate the meta data of our query. In my experience, I have made use of "Fast Sentence Embeddings," which is a Python package that may be thought of as an extension of Gensim. The purpose of this library is to make it as simple as possible to locate sentence vectors for big sets of sentences or texts by using vectors.
 
-<h4><code>I have taken two parts from transformer:</code></h4>
+<h3><code>I have taken two parts from transformer:</code></h3>
 
 ``` python
 1. BertTokenizer
@@ -91,8 +91,13 @@ model_bert = BertForQuestionAnswering.from_pretrained('bert-large-uncased-whole-
 </br>
 </br>
 
-<h2>I used cosine similarity to compare the vectors here.</h2>
-<h3><code> Cosine Similarity </code></h3>
+<h3>I used cosine similarity to compare the vectors here.</h2>
+
+``` python
+
+                        Cosine Similarity
+                        
+```
 
 The degree of resemblance between two vectors in an inner product space may be measured using the cosine similarity. It checks if two vectors are heading nearly in the same direction by measuring the cosine of the angle formed by the two vectors and comparing the results. In text analysis, it is often used as a measurement tool for document similarity.
 
