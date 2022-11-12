@@ -79,6 +79,24 @@ There are several different embedding approaches that we may employ to successfu
 <h3><code><b>Data Pre-processing:</b></code></h3>
 
 Datapoints that contain NAN values, if present in the question or answer columns, are dropped from the dataframe. I then read the question pattern for each datapoint and extracted the question text from that file in the dataframe. Newlines ("n") in the Queston column are replaced with "." fullstops.      
+
+
+<h3><code><b>Data Cleaning: </b></code></h3>
+
+The content in the Question and Answer columns are cleaned up by deleting the [^\w\s\.\?] characters. The resulting text has its upper-case letters changed into lower-case ones.
+        
+        
+<h2><code><b>Word Embedding </b></code></h2>        
+        
+        
+Embedding models are able to extract the meaning of words by making use of the contexts in which they appear. These models are founded on the concept of co-occurrence. I make use of the capabilities of such models and modify them so that they can be applied to a scenario of question-answering to serve as our baseline models. The following provides a detailed description of my implementation of embedding-based approaches:        
+        
+<h3><code><b> Model for answering questions based on Word2Vec data: </b></code></h3>
+
+Word2Vec is an application that learns word associations from a large text corpus by employing a neural network. This model, once trained, is able to recognize similarities within words. It can also be used to predict synonyms and measure the cosine similarity between different words. The machine is able to comprehend the semantics of the language because it is able to measure the degree to which words are similar to one another. Utilizing this in the construction of a FQA system is possible. On our dataset, I was able to modify word2vec embeddings in order to accommodate a question-and-answer format as follows:
+        
+Using fundamental Python data manipulation techniques, the incoming data are first transformed into a list of lists. The word2vec model is updated with these new pieces of data. After that, the model is trained for a total of fifty epochs. The embedding size is maintained at its default value of 100, and the size of the context window is set to 8. After the model has been properly trained, I will start responding to inquiries. I broke down the question that we were asking into its individual words and input them into the Word2Vec system. After adding all of the created embeddings together, the results are then averaged. The question now has a context thanks to this embedding. After that, I go on to the relevant article content, which is intended to be the source from which the response is formed, and I break it up into individual phrases. After that, I utilize a method that is conceptually similar to locate embeddings for each sentence that is included in our article content. Once I obtain the embeddings for the question as well as for each phrase in the response text, I next use the cosine similarity method to determine the degree of similarity between the embeddings of the question and those of each article sentence. The prediction made by the model for the output of the given question is the phrase that has the greatest degree of similarity with the question.        
+        
         
 
 <h3><code>I have taken two parts from transformer:</code></h3>
