@@ -14,6 +14,15 @@ I have a frequently asked questions list available in CSV format in the followin
 
 There were two different datasets, one for training and another for testing or validating the model's performance.
 
+<h4><code>Fast Sentence Embeddings" (FSE) :</code></h4>
+
+``` python
+
+import fse
+
+```
+
+There are several different embedding approaches that we may employ to successfully incorporate the meta data of our query. In my experience, I have made use of "Fast Sentence Embeddings," which is a Python package that may be thought of as an extension of Gensim. The purpose of this library is to make it as simple as possible to locate sentence vectors for big sets of sentences or texts by using vectors.
 
 <h4>I have taken two parts from transformer: </h4>
 
