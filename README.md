@@ -1,7 +1,10 @@
 <h1><code>Headless Technologies Limited</code></h1>
 
+<img src="https://github.com/ahammadmejbah/Headless-Technologies-Limited/blob/main/Images/HL_Logo_horizontal_PNG_File.png" alt="Logo">
 
 <h3><code> * Problem Statement Description:</code></h3>
+
+<img src="https://github.com/ahammadmejbah/Headless-Technologies-Limited/blob/main/Images/Question%20Retriever.png" alt="Logo">
 
 In today's environment, the way information is accessible may be greatly influenced by the use of frequently asked questions (FAQ) systems. Within the field of computer science, the field of FQA may be located at the point where information retrieval and natural language processing meet. The creation of intelligent computer systems that are able to react in natural language to questions posed by users is the focus of this area of study. FQA systems that are able to retrieve desired information accurately and quickly without having to skim through the entire corpus can serve as valuable assets in industry, academia, and our own personal lives. This can result in improved search engine results and more personalized conversational chatbots, for example. Law companies and human resources departments are two examples of real-world settings in which FQA systems have the potential to be useful. In the first scenario, specific information may be required (for citation in a current case) from the records of thousands of previous cases; nonetheless, adopting a FQA system may save a significant amount of time and labor when compared to other options. In the latter scenario, an employee may need to look up particular laws, such as those pertaining to vacations; employing a FQA system might assist them in this endeavor by providing the appropriate answers to queries of the type "How many job openings are available each year?"
 
