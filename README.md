@@ -25,7 +25,8 @@ There were two different datasets, one for training and another for testing or v
 
 NLP's Transformer is a novel design that seeks to handle problems sequence-to-sequence while readily addressing long-distance dependencies. Because of this, the use of two transformer modules is required in order to take use of the architecture. For the purpose of determining the input and output representations, we do not make use of sequence-aligned RNNs or convolutions. Instead, we rely only on paying attention to ourselves.
 
-
+</br>
+</br>
 
 ``` python
                                                  1. BertTokenizer
