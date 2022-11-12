@@ -14,6 +14,24 @@ I have a frequently asked questions list available in CSV format in the followin
 
 There were two different datasets, one for training and another for testing or validating the model's performance.
 
+
+<h3><code> For solving this problem statement I have used bellow packages from python:</code></h3>
+
+``` python
+
+1. Fast Sentence Embeddings --> fse
+2. gensim
+3. Natural Language Toolkit --> nltk
+4. Scikit-learn --> sklearn
+5. Regular Expressions --> re
+6. unicodedata
+7. Matplotlib 
+8. Seaborn 
+9. Pytroch --> torch
+10. Transformers
+
+```
+
 <h4><code>Fast Sentence Embeddings" (FSE) :</code></h4>
 
 ``` python
