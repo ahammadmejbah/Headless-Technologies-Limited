@@ -112,7 +112,7 @@ Using fundamental Python data manipulation techniques, the incoming data are fir
         
         
         
-<code> The Word2Vec model works in this manner by selecting a phrase from the article text that has the greatest Word2Vec embedding similarity with the question that is being asked and then outputting that sentence as the response. This extremely basic question-answering system has a good chance of getting the right response right most of the time. </code>        
+<b><code> The Word2Vec model works in this manner by selecting a phrase from the article text that has the greatest Word2Vec embedding similarity with the question that is being asked and then outputting that sentence as the response. This extremely basic question-answering system has a good chance of getting the right response right most of the time. </code></b>        
         
         
         
