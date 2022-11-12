@@ -12,6 +12,7 @@ I have a frequently asked questions list available in CSV format in the followin
 
 ```
 
+There were two different datasets, one for training and another for testing or validating the model's performance. 
 
 <h4>I have taken two parts from transformer: </h4>
 
