@@ -150,3 +150,5 @@ def cosine_similarity(X, Y=None, dense_output=True):
     return K
 
 ```
+<img src="https://github.com/ahammadmejbah/Headless-Technologies-Limited/blob/main/Images/Boxplot.png" alt="Logo">
+
