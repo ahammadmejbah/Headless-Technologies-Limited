@@ -1,6 +1,8 @@
 <h1><code>Headless Technologies Limited</code></h1>
 
-<h1 style="text-align:center;">Centered Heading</h1>
+<body>
+  <p style="color:rgb(255,0,0);">Red paragraph text</p>
+</body>
 
 <h3><b> Problem Statement Description: </b></h3>
 
