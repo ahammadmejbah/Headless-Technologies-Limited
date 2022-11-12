@@ -26,11 +26,10 @@ NLP's Transformer is a novel design that seeks to handle problems sequence-to-se
 
 
 ``` python
-        1. BertForQuestionAnswering
+                                                 1. BertForQuestionAnswering
 ```
 
-I have developed a new model for the representation of languages called BERT, which stands for Bidirectional Encoder Representations from Transformers. This model was developed specifically for this issue statement. BERT, in contrast to more contemporary models of language representation, is intended to pre-train deep bidirectional representations from unlabeled text. This is accomplished by simultaneously conditioning on both left and right context at all levels of the model. Therefore, the pre-trained BERT model can be fine-tuned with just one more output layer to make state-of-the-art models for a wide range of tasks, such as answering questions and making inferences about language, without having to make significant changes to the architecture for each task. This is possible because the pre-trained BERT model has already been trained.
-
+I have developed a new model for the representation of querstion and answers called BERT, which stands for Bidirectional Encoder Representations from Transformers. BERT, in contrast to more contemporary models of language representation, is intended to pre-train deep bidirectional representations from unlabeled text. This is accomplished by simultaneously conditioning on both left and right context at all levels of the model. Therefore, the pre-trained BERT model can be fine-tuned with just one more output layer to make state-of-the-art models for a wide range of tasks, such as answering questions and making inferences about language, without having to make significant changes to the architecture for each task. This is possible because the pre-trained BERT model has already been trained.
 
 
 <h2>I used cosine similarity to compare the vectors here.</h2>
