@@ -1,4 +1,4 @@
-<h2><code>Headless Technologies Limited</code></h2>
+<h1><code>Headless Technologies Limited</code></h1>
 
 For solving this FAQ problem statement, I have to consider a few preliminary steps before moving forward with the models. First of all, I have to use regular expression techniques for cleaning the datasets. After that, I need to use different approaches so that I can make it acceptable to others.
 
