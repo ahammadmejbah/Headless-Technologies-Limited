@@ -14,6 +14,20 @@ In today's environment, the way information is accessible may be greatly influen
 For solving this FAQ problem statement, I have to consider a few preliminary steps before moving forward with the models. First of all, I have to use regular expression techniques for cleaning the datasets. After that, I need to use different approaches so that I can make it acceptable to others.
 
 
+<h6><code> </code></h6>
+
+If I am going to do this NLP assignment, there are a few fundamental measures that I need to perform in order to assist the program in comprehending natural language:
+
+<ol>
+        <li> Sentence Segmentation</li>
+        <li>Word Tokenization</li>
+        <li>Text Lemmatization</li>
+        <li>Stop Words</li>
+        <li>Dependency Parsing</li>
+        <li>Named Entity Recognition (NER)</li>      
+ </ol>
+
+
 <h3><code>Textual Information Processing:</code></h3> 
 
 The data needs to be pre-processed in order for us to get it all into a format that is consistent before we can begin any NLP project. Our data has to be cleaned up, tokenized, and matricified before we can use it. Let's develop a function that, when applied to the text columns, will carry out the following operations:
