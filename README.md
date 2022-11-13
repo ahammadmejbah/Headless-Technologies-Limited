@@ -242,8 +242,73 @@ print(jaccard(Sentence_1,Sentence_3))
 
 ```
 
+<h1><code> Result and Discussion </code></h1>
 
 The Conversation, as Well as Some Closing Ideas Creating an effective question-and-answer system is a tough undertaking that one must undertake. This problem becomes much more difficult to solve when one considers the several types of results (yes/no, descriptive, spans), which a user may anticipate getting in response to a single question. For example, a user may expect to receive yes/no responses. After beginning with straightforward approaches such as Word2Vec and SIF embeddings, we progressed to attention-based state-of-the-art models such as BERT, which are more difficult to understand. 
+
+
+
+``` python
+
+
+def getAnswerBert(question, context):
+
+  # print('Query Context has {} tokens.'.format(len(tokenizer.encode(context))))
+
+    context_list = get_split(context)
+    ans = []
+
+    for c in context_list:
+
+        encoding = tokenizer.encode_plus(text=question,text_pair=c)
+
+        inputs = encoding['input_ids']  #Token embeddings
+        token_type_id = encoding['token_type_ids']  #Segment embeddings
+        tokens = tokenizer.convert_ids_to_tokens(inputs) #input tokens
+
+        output = model_bert(input_ids=torch.tensor([inputs]), token_type_ids=torch.tensor([token_type_id]))
+        start_index = torch.argmax(output.start_logits)
+        end_index = torch.argmax(output.end_logits)
+
+        answer = ' '.join(tokens[start_index:end_index+1])
+
+        ans.append(answer)
+    print('Question: ', question)
+    potentials = []
+    for i in ans:
+        if ('SEP' not in i) and ('CLS' not in i):
+            potentials.append(re.sub('(#)+', '', i))
+    answer = getBestAnswer(question, potentials)
+
+  # print('Potential Answers: \n')
+  # print(answer.head())
+    return answer
+
+
+```
+
+``` python
+
+print(getAnswerBert(df['Question'].iloc[9], df['Answer'].iloc[9]))
+print("---------------------------------")
+print('Actual Answer: ', df['Answer'].iloc[9])
+
+```
+
+
+<h2><code>Output: </code></h2>
+
+
+``` markdown
+
+Question:  for what did he receive the nobel prize
+
+0    his discovery of the law of the photo ele ctric effect
+Name: 0, dtype: object
+---------------------------------
+Actual Answer:  einstein was rewarded for his many contributions to theoretical physics and especially for his discovery of the law of the photoelectric effect
+
+```
 
 
 The word-to-vec paradigm worked well for us as a starting point in our work. We predicted that it would provide inaccurate results due to the fact that it is a pretty basic approach that is based on phrase similarity and was not intended for question-answering activities. This led us to believe that it was not designed for such jobs. Because it does not comprehend or understand the information, Word2Vec cannot be used to generate responses in natural language. This is because it does not. The most notable disadvantage it has is that it cannot deliver direct replies that are human-like; rather, it can only create phrases drawn from the answer text. This constraint prevents it from providing responses that are more natural. In spite of this, the model performed well, getting a high score according to our one-of-a-kind criteria in spite of the intricacy of the dataset that we used. We were able to acquire the information we needed from a few of the replies it supplied, depending on how closely they linked to the question, and in general, this strategy was beneficial for us. We were able to get the information we needed from a few of the responses it offered.
