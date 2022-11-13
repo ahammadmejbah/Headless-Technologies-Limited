@@ -14,7 +14,7 @@ In today's environment, the way information is accessible may be greatly influen
 For solving this FAQ problem statement, I have to consider a few preliminary steps before moving forward with the models. First of all, I have to use regular expression techniques for cleaning the datasets. After that, I need to use different approaches so that I can make it acceptable to others.
 
 
-<h2><code> </code></h2>
+<h2> </h2>
 
 If I am going to do this NLP assignment, there are a few fundamental measures that I need to perform in order to assist the program in comprehending natural language:
 
