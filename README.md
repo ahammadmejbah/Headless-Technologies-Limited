@@ -28,6 +28,69 @@ If I am going to do this NLP assignment, there are a few fundamental measures th
  </ol>
 
 
+<h2><code> 1. Sentence Segmentation: </code></h2>
+
+``` python
+
+nlp = spacy.load("en_core_web_sm")
+questionText = df["Answer"][8]
+doc = nlp(questionText)
+#to print sentences
+for sent in doc.sents:
+    print(sent)
+
+```
+
+
+<h2><code> 2. Word Tokenization: </code></h2>
+
+``` python
+
+nltk_tokens = nltk.word_tokenize(questionText)
+print (nltk_tokens)
+
+```
+
+
+<h2><code> 3. Lemmatization: </code></h2>
+
+``` python
+tag_map = defaultdict(lambda : wn.NOUN)
+tag_map['J'] = wn.ADJ
+tag_map['V'] = wn.VERB
+tag_map['R'] = wn.ADV
+
+text = df["Answer"][8]
+tokens = word_tokenize(text)
+lemma_function = WordNetLemmatizer()
+for token, tag in pos_tag(tokens):
+    lemma = lemma_function.lemmatize(token, tag_map[tag[0]])
+    print(token, "=>", lemma)
+
+```
+
+
+<h2><code> 4. Stop Words: </code></h2>
+
+
+``` python 
+
+data = df['Answer'][8]
+stopWords = set(stopwords.words('english'))
+words = word_tokenize(data)
+wordsFiltered = []
+
+for w in words:
+    if w not in stopWords:
+        wordsFiltered.append(w)
+
+print(wordsFiltered)
+
+
+
+```
+
+
 <h3><code>Textual Information Processing:</code></h3> 
 
 The data needs to be pre-processed in order for us to get it all into a format that is consistent before we can begin any NLP project. Our data has to be cleaned up, tokenized, and matricified before we can use it. Let's develop a function that, when applied to the text columns, will carry out the following operations:
